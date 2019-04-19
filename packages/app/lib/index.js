@@ -10,6 +10,7 @@ var mapper = new dynamodb_data_mapper_1.DataMapper({
  * This will fail with the error:
  *
  *
+ *
  */
-mapper.get(Object.assign(new dynamodb_models_lib_1.Book, { id: 'dummy' }));
+mapper.get(Object.assign(new dynamodb_models_lib_1.Book, { id: 'dummy' })); // =>
 //# sourceMappingURL=index.js.map

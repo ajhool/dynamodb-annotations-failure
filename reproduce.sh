@@ -1,5 +1,5 @@
 #!bin/bash
-cd dynamodb-models-lib
+cd packages/dynamodb-models-lib
 yarn install
 yarn build
 yarn link
