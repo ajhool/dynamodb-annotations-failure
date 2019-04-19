@@ -6,11 +6,13 @@ Two packages.
  - dynamodb-models-lib
     - Use case: somebody wants to create a common library of dynamodb objects to share across multiple projects. Thus, the library should be its own package. This models lib contains a simple Book object (the book object does NOT need an actual backend table, the error occurs before a network request )
  - app
-    - This is a simple test app that attempts to import the Book object from the `dynamodb-models-lib` (which is accessed locally using `yarn link`) and perform a query using `data-mapper`. The query will fail before 
+    - This is a simple test app that attempts to import the Book object from the `dynamodb-models-lib` (which is accessed locally using `yarn link`) and perform a query using `data-mapper`.
  
 ## To Reproduce
-git clone https://github.com/ajhool/dynamodb-annotations-failure.git
-cd dynamodb-annotations-failure
+```
+  git clone https://github.com/ajhool/dynamodb-annotations-failure.git
+  cd dynamodb-annotations-failure
+```
 
 You can either execute the script: `reproduce.sh`
 Or manually enter the commands found in reproduce.sh
