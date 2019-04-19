@@ -7,6 +7,7 @@ Two packages.
     - Use case: somebody wants to create a common library of dynamodb objects to share across multiple projects. Thus, the library should be its own package. This models lib contains a simple Book object (the book object does NOT need an actual backend table, the error occurs before a network request )
  - app
     - This is a simple test app that attempts to import the Book object from the `dynamodb-models-lib` (which is accessed locally using `yarn link`) and perform a query using `data-mapper`.
+    - This app also contains a local (same package) Book object called "LocalBook". It is exported/imported the same way as `dynamodb-models-lib` is exported/imported, except it comes from the same package. `LocalBook` functions correctly (even thoug h the network request errors due to the dynamo table not actually existing) while `Book` does not perform correctly.
  
 ## To Reproduce
 ```
