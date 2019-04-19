@@ -1,0 +1,21 @@
+{
+  "name": "dynamodb-models-lib",
+  "version": "1.0.0",
+  "description": "Contains a DynamoDB Annotated model",
+  "main": "lib/index.js",
+  "repository": "https://www.github.com/ajhool/dynamodb-annotations-failure",
+  "author": "Aidan Hoolachan",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@aws/dynamodb-data-mapper": "^0.7.3",
+    "@aws/dynamodb-data-mapper-annotations": "^0.7.3",
+    "aws-sdk": "^2.441.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.6"
+  }
+}
